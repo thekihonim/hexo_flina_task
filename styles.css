@@ -733,6 +733,166 @@ h3{
     border-color: #4B4B4B;
 }
 
+@media (max-width: 992px) {
+
+    .career-case-hero {
+        flex-direction: column;
+        /* 增加 hero 區塊和下方列表的間距 */
+        margin-bottom: 48px;
+    }
+
+    .career-case-img {
+        width: 100%;
+        max-width: 100%;
+        padding-bottom: 0;
+    }
+
+    .career-case-card-group {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0; 
+        gap: 16px;
+    }
+
+    .career-case-card {
+        max-width: 100%;
+        padding: 40px 24px;
+    }
+
+    .career-case-card-main,
+    .career-case-card-quote {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    
+    /* --- 4個案例故事 響應式調整 --- */
+
+    .career-case-list {
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+/* 訂閱電子報 */
+.subscribe-section {
+    display: flex;
+    min-height: 834px; 
+    border-top: 1px solid #4B4B4B;
+    border-bottom: 1px solid #4B4B4B;
+}
+
+/* 左半邊背景圖 */
+.subscribe-image-avatar {
+    flex-basis: 50%;
+}
+
+.subscribe-image-avatar img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* 右半邊內容區 */
+.subscribe-content-bg {
+    flex-basis: 50%;
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 80px;
+}
+
+/* 白色訂閱卡片 */
+.subscribe-card {
+    background-color: #FFFFFF;
+    padding: 80px;
+    width: 100%;
+}
+
+.subscribe-description {
+    margin-bottom: 24px;
+}
+
+.subscribe-description span {
+    color: #0027d5;
+}
+
+/* 表單容器 */
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.subscribe-input {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 16px;
+    background-color: #F1F1F1;
+    
+    /* 移除所有邊框和圓角 */
+    border: none;
+    border-radius: 0;
+}
+
+.subscribe-input:focus {
+    outline: none; /* 移除瀏覽器預設的藍色外框 */
+}
+
+.subscribe-input::placeholder {
+    color: #6C757D;
+}
+
+/* 訂閱按鈕 */
+.subscribe-btn {
+    background-color: transparent;
+    color: #0027d5;
+    border: 1px solid #0027d5;
+    padding: 12px 24px;
+    border-radius: 100px;
+    font-weight: 500;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.subscribe-btn:hover {
+    background-color: #0027d5;
+    color: #FFFFFF;
+}
+
+@media (max-width: 992px) {
+
+    .subscribe-section {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .subscribe-image-avatar {
+        flex-basis: auto;
+        height: auto; 
+    }
+
+    .subscribe-image-avatar img {
+        height: auto;
+    }
+
+    .subscribe-content-bg {
+        /* 4. 讓內容區塊也回到正常文檔流 */
+        flex-basis: auto;
+        /* 6. 調整 padding 以符合手機版視覺 */
+        padding: 40px 24px;
+    }
+
+    .subscribe-card {
+        /* 7. 調整卡片內距，讓手機版面更舒適 */
+        padding: 40px 24px;
+    }
+}
 
 
 .pagination{
@@ -762,41 +922,191 @@ h3{
     color: #0027d5;
 }
 
-.footer{
-    width: 100%;
-    background-color: #FBFBFB;
-    border-top: 1px solid #6C757D;
+
+/* 共用頁尾 */
+.footer-copyright p {
+    margin: 0;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: #fff;
 }
 
-.footer-contact-group{
-    width: 1296px;
-    margin: 0 auto;
+
+/* 首頁頁尾 */
+.footer-home {
+    background-color: #FBFBFB;
+}
+
+.contact-area{
+    border-bottom: 1px solid #6C757D;
+}
+
+/* 聯絡方式列表 */
+.footer-home .contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 列表項 (邊框設定) */
+.footer-home .contact-item {
+    border-bottom: 1px solid #000; /* 所有項目都有底線 */
+}
+
+/* 列表項內的連結 (佈局核心) */
+.footer-home .contact-link {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 80px 0;
+    padding: 16px 0;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.footer-home .contact-link:hover {
+    background-color: #F8F9FA;
 }
 
-.footer-email-link{
+/* 左側資訊群組 */
+.footer-home .contact-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* 第一項 Email 和 Label 的樣式 */
+.footer-home .contact-email {
+    font-size: 32px;
+    font-weight: 500;
+    text-decoration-line: underline;
+}
+.footer-home .contact-label {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/* 其他項目的 Icon 和 Text 樣式 */
+.footer-home .contact-icon {
+    width: 44px;
+    height: 44px;
+}
+.footer-home .contact-text {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/* 右側箭頭的樣式 */
+.footer-home .bi-arrow-right {
+    font-size: 24px;
+    color: #000;
+    transition: transform 0.3s ease;
+}
+.footer-home .contact-link:hover .bi-arrow-right {
+    transform: translateX(5px);
+}
+
+@media (max-width: 992px) {
+    .footer-home {
+        padding-top: 40px;
+    }
+    .contact-area{
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+    .footer-home .contact-section {
+        margin-bottom: 40px;
+    }
+    .footer-home .contact-email {
+        font-size: 24px;
+    }
+    .footer-home .contact-label{
+        font-size: 24px;
+    }
+    .footer-home .contact-text {
+        font-size: 24px;
+    }
+    .footer-home .contact-link {
+        flex-direction: column; 
+        align-items: flex-start;
+        justify-content: flex-start; 
+        gap: 8px;
+    }
+
+    .footer-home .contact-link:hover .bi-arrow-right {
+        transform: none;
+    }
+
+    .footer-home .contact-item:first-child .contact-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px; /* Email 和標籤之間的間距 */
+    }
+    .footer-home .bi-arrow-right {
+        width: 100%; 
+        text-align: left;
+    }
+}
+
+/* 部落格頁尾 */
+
+.footer-general {
+    width: 100%;
+    background-color: #FBFBFB; /* 淺灰色背景 */
+    border-top: 1px solid #6C757D; /* 上方分隔線 */
+}
+
+/* 聯絡資訊群組 (Email + Icons) */
+.footer-general .footer-contact-group {
+    max-width: 1296px; /* 內容最大寬度 */
+    margin: 0 auto; /* 水平置中 */
+    display: flex;
+    justify-content: space-between; /* 將 Email 和 Icons 推向兩側 */
+    align-items: center;
+    padding: 80px 12px; /* 上下 80px、左右 12px 的內距 */
+}
+
+/* Email 連結 */
+.footer-general .footer-email-link {
     font-size: 32px;
     font-weight: 500;
     text-decoration: none;
     color: #000;
+    transition: color 0.3s ease;
 }
-
-.footer-email-link:hover{
+.footer-general .footer-email-link:hover {
     color: #0027D5;
 }
 
-.footer-copyright{
-    width: 100%;
-    text-align: center;
-    padding: 24px 0;
-    background-color: #fff;
+/* 社群 Icon 列表 */
+.footer-general .social-list {
+    display: flex;
+    gap: 16px; /* 根據視覺調整間距，16px 看起來會更舒適 */
+    list-style: none; /* 移除 ul 的預設點點 */
+    padding: 0;
+    margin: 0;
 }
 
+/* 社群 Icon 圖片 */
+.footer-general .social-list img {
+    width: 44px;
+    height: 44px;
+    display: block; /* 避免圖片下方產生多餘空隙 */
+    transition: opacity 0.3s ease;
+}
+.footer-general .social-list img:hover {
+    opacity: 0.8; /* 滑鼠懸停時稍微變淡 */
+}
+
+
+/* --- 部落格/內頁 RWD (聯絡方式消失) --- */
 @media (max-width: 992px) {
-  .footer-contact-group {
-    display: none;
-  }
+    /* 
+      這條規則只會作用在 .footer-general 上，
+      當螢幕寬度小於 992px 時，會隱藏 Email 和社群 Icon 的區塊。
+      這完全不會影響到首頁的 .footer-home。
+    */
+    .footer-general .footer-contact-group {
+        display: none;
+    }
 }
