@@ -642,7 +642,98 @@ h3{
 .career-case-btn:hover{
     color: #fff;
     background-color: #0027d5;
+    border-color: #0027d5;
 }
+
+/* 4個案例故事 */
+.career-case-list-block {
+    padding: 24px; /* 內距，讓卡片和虛線框之間有空間 */
+    background-color: #F5F5F5;
+    gap: 24px;
+}
+
+/* 卡片列表容器 (ul 的替代品) */
+.career-case-list {
+    display: flex;
+    justify-content: space-between; /* 讓卡片平均分佈 */
+    gap: 24px; /* 設定卡片之間的間距 */
+}
+
+/* 單一卡片 */
+.career-case-item {
+    flex: 1; /* 讓每張卡片平分寬度 */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* 卡片頭像 */
+.career-case-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* 關鍵：設定 50% 變成圓形 */
+    object-fit: cover; /* 確保圖片比例正確，不會變形 */
+    margin-bottom: 16px;
+}
+
+/* 卡片標題 */
+.career-case-item-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+/* 特色列表 (ul) */
+.career-case-features {
+    list-style: none; /* 移除預設的點點 */
+    padding: 0;
+    margin: 0;
+    margin-bottom: 24px;
+    width: 100%; /* 讓 ul 撐滿卡片寬度，以便增加底線 */
+    
+    /* 這裡加上分隔線 */
+    border-bottom: 1px solid #4B4B4B;
+    padding-bottom: 24px;
+}
+
+/* 特色列表項 (li) */
+.career-case-features li {
+    display: flex;
+    align-items: center; /* 垂直對齊 icon 和文字 */
+    margin-bottom: 8px; /* 列表項之間的間距 */
+    font-size: 16px;
+    color: #333;
+}
+
+/* 移除最後一個 li 的下間距 */
+.career-case-features li:last-child {
+    margin-bottom: 0;
+}
+
+/* 列表項的 icon */
+.career-case-features .bi-check-square-fill {
+    color: #0027d5; /* 藍色 icon */
+    margin-right: 8px; /* icon 和文字的間距 */
+}
+
+/* 前往 podcast 按鈕 */
+.career-case-item-btn {
+    display: inline-block;
+    color: #4B4B4B;
+    border: 1px solid #4B4B4B;
+    padding: 8px 16px;
+    border-radius: 999px;
+    transition: all 0.3s ease;
+}
+
+.career-case-item-btn:hover {
+    background-color: #4B4B4B;
+    color: #FFFFFF;
+    border-color: #4B4B4B;
+}
+
+
 
 .pagination{
     margin: 0 auto 80px;
