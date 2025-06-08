@@ -647,7 +647,7 @@ h3{
 
 /* 4個案例故事 */
 .career-case-list-block {
-    padding: 24px; /* 內距，讓卡片和虛線框之間有空間 */
+    padding: 24px;
     background-color: #F5F5F5;
     gap: 24px;
 }
@@ -655,8 +655,8 @@ h3{
 /* 卡片列表容器 (ul 的替代品) */
 .career-case-list {
     display: flex;
-    justify-content: space-between; /* 讓卡片平均分佈 */
-    gap: 24px; /* 設定卡片之間的間距 */
+    justify-content: space-between;
+    gap: 24px; 
 }
 
 /* 單一卡片 */
@@ -671,8 +671,8 @@ h3{
 .career-case-avatar {
     width: 80px;
     height: 80px;
-    border-radius: 50%; /* 關鍵：設定 50% 變成圓形 */
-    object-fit: cover; /* 確保圖片比例正確，不會變形 */
+    border-radius: 50%; 
+    object-fit: cover;
     margin-bottom: 16px;
 }
 
@@ -686,11 +686,11 @@ h3{
 
 /* 特色列表 (ul) */
 .career-case-features {
-    list-style: none; /* 移除預設的點點 */
+    list-style: none;
     padding: 0;
     margin: 0;
     margin-bottom: 24px;
-    width: 100%; /* 讓 ul 撐滿卡片寬度，以便增加底線 */
+    width: 100%;
     
     /* 這裡加上分隔線 */
     border-bottom: 1px solid #4B4B4B;
@@ -700,8 +700,8 @@ h3{
 /* 特色列表項 (li) */
 .career-case-features li {
     display: flex;
-    align-items: center; /* 垂直對齊 icon 和文字 */
-    margin-bottom: 8px; /* 列表項之間的間距 */
+    align-items: center;
+    margin-bottom: 8px; 
     font-size: 16px;
     color: #333;
 }
@@ -882,14 +882,11 @@ h3{
     }
 
     .subscribe-content-bg {
-        /* 4. 讓內容區塊也回到正常文檔流 */
         flex-basis: auto;
-        /* 6. 調整 padding 以符合手機版視覺 */
         padding: 40px 24px;
     }
 
     .subscribe-card {
-        /* 7. 調整卡片內距，讓手機版面更舒適 */
         padding: 40px 24px;
     }
 }
@@ -1058,12 +1055,12 @@ h3{
 
 /* 聯絡資訊群組 (Email + Icons) */
 .footer-general .footer-contact-group {
-    max-width: 1296px; /* 內容最大寬度 */
-    margin: 0 auto; /* 水平置中 */
+    max-width: 1296px;
+    margin: 0 auto; 
     display: flex;
-    justify-content: space-between; /* 將 Email 和 Icons 推向兩側 */
+    justify-content: space-between;
     align-items: center;
-    padding: 80px 12px; /* 上下 80px、左右 12px 的內距 */
+    padding: 80px 12px;
 }
 
 /* Email 連結 */
@@ -1081,8 +1078,8 @@ h3{
 /* 社群 Icon 列表 */
 .footer-general .social-list {
     display: flex;
-    gap: 16px; /* 根據視覺調整間距，16px 看起來會更舒適 */
-    list-style: none; /* 移除 ul 的預設點點 */
+    gap: 16px;
+    list-style: none; 
     padding: 0;
     margin: 0;
 }
@@ -1091,21 +1088,16 @@ h3{
 .footer-general .social-list img {
     width: 44px;
     height: 44px;
-    display: block; /* 避免圖片下方產生多餘空隙 */
+    display: block;
     transition: opacity 0.3s ease;
 }
 .footer-general .social-list img:hover {
-    opacity: 0.8; /* 滑鼠懸停時稍微變淡 */
+    opacity: 0.8; 
 }
 
 
 /* --- 部落格/內頁 RWD (聯絡方式消失) --- */
 @media (max-width: 992px) {
-    /* 
-      這條規則只會作用在 .footer-general 上，
-      當螢幕寬度小於 992px 時，會隱藏 Email 和社群 Icon 的區塊。
-      這完全不會影響到首頁的 .footer-home。
-    */
     .footer-general .footer-contact-group {
         display: none;
     }
