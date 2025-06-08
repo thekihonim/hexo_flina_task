@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>首頁</title>
+</head>
+<body>
+    <header class="header">
+        <nav>
+          <ul>
+            <li><a href="#">首頁</a></li>
+            <li><a href="blog.html">部落格</a></li>
+          </ul>
+        </nav>
+    </header>   
+    <section class="banner">
+        <div class="banner-img">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section.png?raw=true" alt="Alyse Wang 照片">
+        </div>
+        <div class="banner-content">
+            <div class="banner-content-text">
+                <h1>Alyse Wang</h1>
+                <p>前端工程師 & 職涯諮詢師</p>
+            </div>
+        </div>
+    </section>
+    <section class="intro-me">
+        <div class="intro-me-content">
+            <p>嗨，我是 Alyse 一名深耕前端技術的工程師。</p>
+            <p>擅長 React、Vue 等框架，同時熱愛為轉職與新手工程師提供職涯指導。邀請你與我一起，開啟更具潛能的程式與職涯之旅！</p>
+            <ul class="social-list">
+                <li><a href="#"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/onlyIcon.png?raw=true" alt="YouTube"></a></li>
+                <li><a href="#"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/onlyIcon-1.png?raw=true" alt="Podcast"></a></li>
+                <li><a href="#"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/onlyIcon-2.png?raw=true" alt="Facebook"></a></li>
+                <li><a href="#"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/icons8-linkedin.png?raw=true" alt="LinkedIn"></a></li>
+                <li><a href="#"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/onlyIcon-3.png?raw=true" alt="Instagram"></a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="services container">
+        <h2 class="section-title">專業服務與方案</h2>
+        <div class="services-list">
+            <div class="service-item">
+                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/photo.png?raw=true" alt="履歷健檢情境照">
+                <div class="service-info">
+                    <i class="bi bi-dash-lg"></i>
+                    <h3>履歷健檢</h3>
+                    <p>履歷是打開機會之門的第一步。讓我協助你突顯專業技術與核心能力，並透過簡短模擬面試為你加分，讓面試官第一眼就被你吸引。</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/photo2.png?raw=true" alt="線上諮詢情境照">
+                <div class="service-info">
+                    <i class="bi bi-dash-lg"></i>
+                    <h3>線上諮詢</h3>
+                    <p>想快速解決前端學習瓶頸，或需要專業職涯指引？透過線上一對一諮詢，我將協助你更有方向地邁進。</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/photo3.png?raw=true" alt="網頁開發情境照">
+                <div class="service-info">
+                    <i class="bi bi-dash-lg"></i>
+                    <h3>網頁開發</h3>
+                    <p>想打造高效能、具美感的網站？我提供從需求訪談到架構實作的一站式服務，讓你的品牌與產品在線上脫穎而出。</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/photo4.png?raw=true" alt="企業內訓情境照">
+                <div class="service-info">
+                    <i class="bi bi-dash-lg"></i>
+                    <h3>企業內訓</h3>
+                    <p>想讓團隊快速掌握前端最新技術或優化現有專案流程？我可協助打造專業、實用的企業內訓課程，一次解決團隊痛點。</p>
+                </div>
+            </div>
+            <div class="service-info-more">
+                <h3>聯繫我，取得更多資訊！</h3>
+                <a href="#" class="service-info-link">
+                    <i class="bi bi-arrow-right-circle icon-default"></i>
+                    <i class="bi bi-arrow-right-circle-fill icon-hover"></i>
+                </a>
+                
+            </div>
+        </div>
+    </section>
+    <section class="blog-selection">
+        <div class="container">
+            <h2 class="section-title">部落格精選</h2>
+            <div class="swiper-area">
+                <div class="swiper blog-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- 為了讓 loop 生效，放 6 張卡片 -->
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/photo5.png?raw=true" alt="自學前端不用怕文章封面圖">
+                                <div class="card-body"> 
+                                    <time datetime="2024/10/21">2024/10/21</time>
+                                    <p class="card-tags">
+                                        <span class="tag">#前端開發</span>
+                                        <span class="tag">#職涯成長</span>
+                                        <span class="badge">最新文章</span>
+                                    </p>
+                                    <h3>自學前端不用怕：從零開始的三大關鍵</h3>
+                                    <p class="card-desc">嗨，我是 Alyse，一名前端工程師兼職涯諮詢師。一直以來，我都很喜歡在部落格分享學習與工作心得，也常有讀...</p>
+                                    <a href="#" class="card-link">閱讀內文</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/photo6.png?raw=true" alt="前端面試不再徬徨文章封面圖">
+                                <div class="card-body">
+                                    <time datetime="2024/07/08">2024/07/08</time>
+                                    <p class="card-tags">
+                                        <span class="tag">#面試準備</span>
+                                        <span class="tag">#工程師求職</span>
+                                        <span class="badge">人氣文章</span>
+                                    </p>
+                                    <h3>前端面試不再徬徨：破解常見提問的三大策略</h3>
+                                    <p class="card-desc">面試前端工程師時，你或許會擔心被問到各種刁鑽的技術題目，或是擔憂無法在短時間內展現實力。其實，許多面試...</p>
+                                    <a href="#" class="card-link">閱讀內文</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/photo7.png?raw=true" alt="CSS 魔法大揭密文章封面圖">
+                                <div class="card-body">
+                                    <time datetime="2024/09/03">2024/09/03</time>
+                                    <p class="card-tags">
+                                        <span class="tag">#CSS設計</span>
+                                        <span class="tag">#視覺體驗</span>
+                                    </p>
+                                    <h3>CSS 魔法大揭密：排版與設計的三大關鍵技巧</h3>
+                                    <p class="card-desc">在瀏覽器畫面上實現各種精美介面，一直是前端開發充滿成就感的部分。但當面臨複雜的佈局需求或是響應式設計時...</p>
+                                    <a href="#" class="card-link">閱讀內文</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/photo5.png?raw=true" alt="自學前端不用怕文章封面圖">
+                                <div class="card-body"> 
+                                    <time datetime="2024/10/21">2024/10/21</time>
+                                    <p class="card-tags">
+                                        <span class="tag">#前端開發</span>
+                                        <span class="tag">#職涯成長</span>
+                                        <span class="badge">最新文章</span>
+                                    </p>
+                                    <h3>自學前端不用怕：從零開始的三大關鍵</h3>
+                                    <p class="card-desc">嗨，我是 Alyse，一名前端工程師兼職涯諮詢師。一直以來，我都很喜歡在部落格分享學習與工作心得，也常有讀...</p>
+                                    <a href="#" class="card-link">閱讀內文</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/photo6.png?raw=true" alt="前端面試不再徬徨文章封面圖">
+                                <div class="card-body">
+                                    <time datetime="2024/07/08">2024/07/08</time>
+                                    <p class="card-tags">
+                                        <span class="tag">#面試準備</span>
+                                        <span class="tag">#工程師求職</span>
+                                        <span class="badge">人氣文章</span>
+                                    </p>
+                                    <h3>前端面試不再徬徨：破解常見提問的三大策略</h3>
+                                    <p class="card-desc">面試前端工程師時，你或許會擔心被問到各種刁鑽的技術題目，或是擔憂無法在短時間內展現實力。其實，許多面試...</p>
+                                    <a href="#" class="card-link">閱讀內文</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/photo7.png?raw=true" alt="CSS 魔法大揭密文章封面圖">
+                                <div class="card-body">
+                                    <time datetime="2024/09/03">2024/09/03</time>
+                                    <p class="card-tags">
+                                        <span class="tag">#CSS設計</span>
+                                        <span class="tag">#視覺體驗</span>
+                                    </p>
+                                    <h3>CSS 魔法大揭密：排版與設計的三大關鍵技巧</h3>
+                                    <p class="card-desc">在瀏覽器畫面上實現各種精美介面，一直是前端開發充滿成就感的部分。但當面臨複雜的佈局需求或是響應式設計時...</p>
+                                    <a href="#" class="card-link">閱讀內文</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 箭頭放在 swiper-area 內，但在 swiper 的外面才看得見 -->
+                <div class="arrow-container">
+                    <div class="swiper-button-prev"><i class="bi bi-arrow-left-circle-fill"></i></div>
+                    <div class="swiper-button-next"><i class="bi bi-arrow-right-circle-fill"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="all.js"></script>
+    
+    <section class="career-case-section">
+        <div class="container">
+            <h2 class="career-case-title">職涯諮詢成功案例</h2>
+            <div class="career-case-hero">
+                <!-- 圖片區塊，帶灰底 -->
+                <div class="career-case-img-block">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/photo8.png?raw=true" alt="案例學員" class="career-case-img">
+                </div>
+                <div class="career-case-card-group">
+                    <!-- 右上卡片 -->
+                    <div class="career-case-card career-case-card-main">
+                        <i class="bi bi-dash-lg"></i>
+                        <p>
+                        在職涯發展的關鍵轉折點上，專業的協助與正確的方向至關重要。<br>
+                        針對職涯進步，我可以幫助你快速釐清目標、建立更全面的技術與軟實力，並有效<span>突破原有的舒適圈</span> 。
+                        </p>
+                    </div>
+                    <!-- 右下卡片 -->
+                    <div class="career-case-card career-case-card-quote">
+                        <i class="bi bi-dash-lg"></i>
+                        <p>
+                        期待在下一個新機會中，我能與你一起攜手再向更高峰！
+                        </p>
+                        <a href="#" class="career-case-btn">立即預約諮詢</a>
+                    </div>
+                </div>
+            </div>
+            <div class="career-case-list-block">
+                <div class="career-case-list">
+                <!-- 卡片1 -->
+                <div class="career-case-item">
+                    <img src="asset/img1.jpg" alt="學員1" class="career-case-avatar">
+                    <h4 class="career-case-item-title">無經驗找到前端工程師 Offer</h4>
+                    <ul class="career-case-features">
+                    <li><i class="bi bi-check-square-fill"></i> 打造簡明專業履歷亮點</li>
+                    <li><i class="bi bi-check-square-fill"></i> 深度強化面試表現</li>
+                    </ul>
+                    <a href="#" class="career-case-item-btn">前往聽 podcast</a>
+                </div>
+                <!-- 卡片2 -->
+                <div class="career-case-item">
+                    <img src="asset/img2.jpg" alt="學員2" class="career-case-avatar">
+                    <h4 class="career-case-item-title">轉職迷茫到明確學習規劃</h4>
+                    <ul class="career-case-features">
+                    <li><i class="bi bi-check-square-fill"></i> 制訂階段性目標與時間安排</li>
+                    <li><i class="bi bi-check-square-fill"></i> 鼓勵參與前端社群活動</li>
+                    </ul>
+                    <a href="#" class="career-case-item-btn">前往聽 podcast</a>
+                </div>
+                <!-- 卡片3 -->
+                <div class="career-case-item">
+                    <img src="asset/img3.jpg" alt="學員3" class="career-case-avatar">
+                    <h4 class="career-case-item-title">面試緊張到從容應對</h4>
+                    <ul class="career-case-features">
+                    <li><i class="bi bi-check-square-fill"></i> 透過面試模擬找出常犯的邏輯盲點</li>
+                    <li><i class="bi bi-check-square-fill"></i> 討論調適平常緊張狀態的回應方式</li>
+                    </ul>
+                    <a href="#" class="career-case-item-btn">前往聽 podcast</a>
+                </div>
+                <!-- 卡片4 -->
+                <div class="career-case-item">
+                    <img src="asset/img4.jpg" alt="學員4" class="career-case-avatar">
+                    <h4 class="career-case-item-title">面試緊張到從容晉升</h4>
+                    <ul class="career-case-features">
+                    <li><i class="bi bi-check-square-fill"></i> 擬定進階成果技術研究目標</li>
+                    <li><i class="bi bi-check-square-fill"></i> 培養跨團隊溝通與簡報能力</li>
+                    </ul>
+                    <a href="#" class="career-case-item-btn">前往聽 podcast</a>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+</body>
+</html>
